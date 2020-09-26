@@ -80,36 +80,70 @@
         </ul>
       </section>
 
-      <section class="bicycle" id="bicycle">
-        <h2 class="bicycle__titile">Виды велосипедов</h2>
-        <div class="bicycle__inner">
-          <a class="bicycle__item">
-            <img class="bicycle__img" src="" width="342" height="503" alt="Дорожный велосипед">
-            <p class="bicycle__type">Дорожный велосипед</p>
-          </a>
-        </div>
+      <div class="main__wrap-bicycle">
+        <section class="bicycle" id="bicycle">
+          <h2 class="bicycle__titile">Виды велосипедов</h2>
+          <div class="bicycle__inner">
+            <a class="bicycle__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/andreas-haimerl-mobile@1x.webp 1x,img/andreas-haimerl-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/andreas-haimerl-desctop@1x.webp 1x, andreas-haimerl-desctop@2x.webp 2x">
 
-        <div class="bicycle__inner">
-          <a class="bicycle__item">
-            <img class="bicycle__img" src="" width="342" height="503" alt="Горный велосипед">
-            <p class="bicycle__type">Горный велосипед</p>
-          </a>
-        </div>
+                <source media="(min-width: 320px)" srcset="img/andreas-haimerl-mobile@1x.jpg 1x,img//andreas-haimerl-mobile@2x.jpg 2x">
+                <img class="bicycle__img" src="img/andreas-haimerl-desctop@1x.jpg" srcset="img/andreas-haimerl-desctop@1x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
+              </picture>
+              <p class="bicycle__type">Дорожный велосипед</p>
+            </a>
+          </div>
 
-        <div class="bicycle__inner">
-          <a class="bicycle__item">
-            <img class="bicycle__img" src="" width="342" height="503" alt="Детский велосипед">
-            <p class="bicycle__type">Детский велосипед</p>
-          </a>
-        </div>
-      </section>
+          <div class="bicycle__inner">
+            <a class="bicycle__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/eberhard-grossgasteiger-mobile@1x.webp 1x,img/eberhard-grossgasteiger-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/eberhard-grossgasteiger-desctop@1x.webp 1x, eberhard-grossgasteiger-desctop@2x.webp 2x">
 
-      <section class="video" id="video">
-        <h2 class="video__title">Видео про велосипеды</h2>
-        <p class="video__descript">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <img class="video__item" src="img/video-bicycle.png" width="" height="" alt="Видео помогает выбрать велосипед">
-        <!-- <video class="video__item" src="video/bicycle.mp4"></video> -->
-      </section>
+                <source media="(min-width: 320px)" srcset="img/eberhard-grossgasteiger-mobile@1x.jpg 1x,img//eberhard-grossgasteiger-mobile@2x.jpg 2x">
+                <img class="bicycle__img" src="img/eberhard-grossgasteiger-desctop@1x.jpg" srcset="img/eberhard-grossgasteiger-desctop@1x.jpg 2x" alt="Горный велосипед" width="342" height="503">
+              </picture>
+              <p class="bicycle__type">Горный велосипед</p>
+            </a>
+          </div>
+
+          <div class="bicycle__inner">
+            <a class="bicycle__item">
+
+              <picture>
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/roger-goh-mobile@1x.webp 1x,img/roger-goh-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/roger-goh-desctop@1x.webp 1x, roger-goh-desctop@2x.webp 2x">
+
+                <source media="(min-width: 320px)" srcset="img/roger-goh-mobile@1x.jpg 1x,img//roger-goh-mobile@2x.jpg 2x">
+                <img class="bicycle__img" src="img/roger-goh-desctop@1x.jpg" srcset="img/roger-goh-desctop@1x.jpg 2x" alt="Детский велосипед" width="342" height="503">
+              </picture>
+
+              <p class="bicycle__type">Детский велосипед</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="main__wrap-video">
+        <section class="video" id="video">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__descript">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/video-bicycle-mobile@1x.webp 1x,img/video-bicycle-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-bicycle-tablet@1x.webp 1x,img/video-bicycle-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-bicycle-desctop@1x.webp 1x, video-bicycle-desctop@2x.webp 2x">
+
+            <source media="(min-width: 320px)" srcset="img/video-bicycle-mobile@1x.jpg 1x,img//video-bicycle-mobile@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-bicycle-tablet@1x.jpg 1x,img/video-bicycle-tablet@2x.jpg 2x">
+            <img class="video__item" src="img/video-bicycle-desctop@1x.jpg" srcset="img/video-bicycle-desctop@2x.jpg 2x" alt="Видео про велосипеды" width="929" height="522">
+          </picture>
+
+          <!-- <video class="video__item" src="video/bicycle.mp4"></video> -->
+        </section>
+      </div>
 
     </main>
 
