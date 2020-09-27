@@ -1,6 +1,123 @@
 .header {
-  width: 200px;
-  height: 50px;
+  width: 100%;
+  // min-width: 1024px;
+  // max-width: 1440px;
+  min-height: 825px;
+  background-image: url("../img/background-bike-desctop@1x.png");
+  background-color: rgb(29, 29, 29);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// .header::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0%;
+//   left: 0%;
+//   height: 825px;
+//   background-image: url("../img/background-bike-desctop@1x.png");
+//   background-color: rgb(29, 29, 29);
+//   background-size: contain;
+//   // background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   z-index: -1;
+
+//   width: 100%;
+//   min-width: 1024px;
+//   // max-width: 1440px;
+// }
+
+.header__logo-wrap {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1166px;
+  min-height: 0;
   margin: 0 auto;
-  background-color: plum;
+  position: relative;
+  // background-color: cornflowerblue;
+}
+
+.header__logo {
+  position: absolute;
+  width: 68px;
+  height: 21px;
+  bottom: -338px;
+  left: 144px;
+}
+
+.header__nav {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1166px;
+
+  padding: 0 146px;
+  margin: 0 auto;
+  // background-color: chartreuse;
+}
+
+.header__list {
+  @include list-reset;
+  height: 62px;
+  padding-left: 19px;
+  padding-right: 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // background-color: pink;
+}
+
+.header__link {
+  box-sizing: border-box;
+  display: block;
+  height: 62px;
+  padding-top: 20px;
+  color: $light-1;
+  letter-spacing: -0.3px;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: $basic;
+}
+
+.header__link:active {
+  color: rgba($basic, 0.5);
+}
+
+.header__inner {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1166px;
+  min-height: 763px;
+  margin: 0 auto;
+  padding: 0 143px;
+  padding-top: 243px;
+}
+
+.header__goal,
+.header__mission {
+  @include text-reset;
+  width: 393px;
+}
+
+.header__goal {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: calc(64 / 46);
+  letter-spacing: -0.3px;
+  color: $light-1;
+  padding-top: 65px;
+  margin-bottom: 23px;
+}
+
+.header__mission {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(32 / 20);
+  letter-spacing: -0.1px;
+  color: $light-1;
 }

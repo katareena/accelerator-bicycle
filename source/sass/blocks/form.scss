@@ -1,0 +1,59 @@
+.form {
+  width: 327px;
+  position: absolute;
+  left: 59.6%; //695px;
+  top: -503px;
+}
+
+.form__descript {
+  @include text-reset;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: calc(28 / 17);
+  letter-spacing: -0.1px;
+  color: $light-1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 327px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: $light-1;
+  color: $dark-5;
+  padding: 12px 29px;
+  margin-bottom: 20px;
+}
+
+.form__input::placeholder {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: calc(24 / 15);
+  color: rgba($dark-3, 0.5);
+}
+
+.form__button {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: calc(21 / 15);
+  color: $dark-5;
+  text-align: center;
+
+  width: 327px;
+  height: 51px;
+  border: none;
+  border-radius: 4px;
+  background-color: $basic;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: $basic-hover;
+}
+
+.form__button:active {
+  background-color: rgba($basic-hover, 0.4);
+}

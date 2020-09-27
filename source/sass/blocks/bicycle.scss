@@ -1,0 +1,62 @@
+.bicycle {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1166px;
+  margin: 0 auto;
+  min-height: 1038px;
+  padding-top: 150px;
+  padding-left: 32px;
+  padding-right: 8px;
+  background-color: pink;
+}
+
+.bicycle__titile {
+  @include text-reset;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+  color: $dark-1;
+
+  margin-left: 35.7%;
+  margin-bottom: 89px;
+}
+
+.bicycle__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bicycle__item--midle {
+  margin-top: -30px;
+}
+
+.bicycle__item--high {
+  margin-top: -40px;
+}
+
+.bicycle__img {
+  width: 342px;
+  margin-bottom: 10px;
+}
+
+.bicycle__img--road {
+  height: 503px;
+}
+
+.bicycle__img--mountain {
+  height: 566px;
+}
+
+.bicycle__img--child {
+  height: 513px;
+}
+
+.bicycle__type {
+  @include text-reset;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}

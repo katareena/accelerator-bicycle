@@ -9,11 +9,11 @@ html {
 }
 
 body {
-  font-family: "Montserrat", "Tahoma", sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(28 / 16);
-  color: $dark-2;
+  line-height: calc(32 / 16);
+  color: $dark-5;
 
   background-color: $light-1;
 
@@ -48,6 +48,13 @@ a {
   text-decoration: none;
 }
 
-a:focus {
-  color: $dark-4;
-}
+// h1,
+// h2,
+// h3,
+// p {
+//   @include text-reset;
+// }
+
+// a:focus {
+//   color: $dark-4;
+// }
