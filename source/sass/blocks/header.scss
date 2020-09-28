@@ -5,10 +5,23 @@
   min-height: 825px;
   background-image: url("../img/background-bike-desctop@1x.png");
   background-color: rgb(29, 29, 29);
+  // background-color: linear-gradient(#000000 50%, #141414 80%);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
+
+// .header::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   min-height: 825px;
+//   background: linear-gradient(#000000 50%, #141414 80%);
+//   z-index: -1;
+// }
 
 // .header::after {
 //   content: "";
@@ -70,7 +83,7 @@
   // background-color: pink;
 }
 
-.header__link {
+.header__item a {
   box-sizing: border-box;
   display: block;
   height: 62px;
@@ -79,12 +92,12 @@
   letter-spacing: -0.3px;
 }
 
-.header__link:hover,
-.header__link:focus {
+.header__item a:hover,
+.header__item a:focus {
   color: $basic;
 }
 
-.header__link:active {
+.header__item a:active {
   color: rgba($basic, 0.5);
 }
 
@@ -98,13 +111,13 @@
   padding-top: 243px;
 }
 
-.header__goal,
-.header__mission {
+.header__inner h1,
+.header__inner p {
   @include text-reset;
   width: 393px;
 }
 
-.header__goal {
+.header__inner h1 {
   font-weight: 700;
   font-size: 46px;
   line-height: calc(64 / 46);
@@ -114,7 +127,7 @@
   margin-bottom: 23px;
 }
 
-.header__mission {
+.header__inner p {
   font-weight: 300;
   font-size: 20px;
   line-height: calc(32 / 20);

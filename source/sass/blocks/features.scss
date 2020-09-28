@@ -5,11 +5,10 @@
   padding-top: 150px;
   margin: 0 auto;
   min-height: 503px;
-  background-color: paleturquoise;
-
+  // background-color: paleturquoise;
 }
 
-.features__title {
+.features h2 {
   @include text-reset;
   font-weight: 600;
   font-size: 30px;
@@ -44,11 +43,11 @@
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 28px;
-  line-height: calc (38 / 28);
+  line-height: calc(38 / 28);
   color: $basic;
 }
 
-.features__text {
+.features__item p {
   @include text-reset;
   font-size: 22px;
   line-height: calc(34 / 22);
