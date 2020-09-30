@@ -40,18 +40,18 @@
   position: relative;
 }
 
-// .contacts__map::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   // margin: 0 auto;
-//   background-repeat: no-repeat;
-//   width: 957px;
-//   height: 530px;
-//   background-image: url("../img/map.jpg");
-// }
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  // margin: 0 auto;
+  background-repeat: no-repeat;
+  width: 957px;
+  height: 530px;
+  background-image: url("../img/map.jpg");
+}
 
 .contacts__inner {
   width: 565px;

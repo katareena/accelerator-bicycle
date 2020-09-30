@@ -3,6 +3,16 @@
   position: absolute;
   left: 59.6%; //695px;
   top: -503px;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+    position: static;
+    // min-height: 343px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
 }
 
 .form p {
@@ -14,6 +24,17 @@
   color: $light-1;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: $dark-5;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form input {
@@ -28,6 +49,16 @@
   color: $dark-5;
   padding: 12px 29px;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+    padding: 12px 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    padding: 12px 26px;
+  }
 }
 
 .form input::placeholder {
@@ -44,6 +75,10 @@
 
 .form input:invalid {
   box-shadow: 0 0 0 2px $invalid-form;
+
+  @media (max-width: $tablet-width) {
+    box-shadow: 0 0 0 1px $invalid-form;
+  }
 }
 
 .form button {
@@ -59,6 +94,14 @@
   border: none;
   border-radius: 4px;
   background-color: $basic;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
 }
 
 .form button:hover,

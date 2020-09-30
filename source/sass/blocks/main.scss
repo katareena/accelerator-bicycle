@@ -9,6 +9,23 @@
   height: 0;
   margin: 0 auto;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    min-width: 768px;
+    max-width: 1023px;
+    min-height: 343px;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    max-width: 767px;
+    min-height: 358px;
+  }
 }
 
 .main__wrap-bicycle {

@@ -20,6 +20,18 @@
         background-image: url("img/index-desktop.png");
       }
 
+      @media (max-width: 1023px) {
+        html {
+          background-image: url("img/index-tablet.png");
+        }
+      }
+
+      @media (max-width: 767px) {
+        html {
+          background-image: url("img/index-mobile.png");
+        }
+      }
+
       body {
         opacity: 0.5;
       } */
@@ -35,9 +47,12 @@
         <a class="header__logo">
           <img class="header__logo-img" src="img/logo.svg" width="70" height="22" alt="Логотип магазина велосипедов «Moon»">
         </a>
+        <button class="header__burger header__burger--hidden" type="button" onclick="myFunction()" aria-label="кнопка открытия меню"></button>
       </div>
 
-      <nav class="header__nav">
+
+
+      <nav class="header__nav header__nav--open">
         <ul class="header__list">
           <li class="header__item">
             <a href="#feautures">О нас</a>
@@ -91,12 +106,17 @@
       <div class="main__wrap-form">
         <form class="form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <label for="name">
-          <input id="name" name="name" type="text" minlength="2" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
-          <label for="phone"></label>
-          <input id="phone" name="telephone" type="tel" maxlength="50" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required="">
-          <button type="submit">Подобрать велосипед мечты</button>
-        </label></form>
+          <div>
+            <label for="name"></label>
+            <input id="name" name="name" type="text" minlength="2" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
+          </div>
+
+          <div>
+            <label for="phone"></label>
+            <input id="phone" name="telephone" type="tel" maxlength="50" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required="">
+          </div>
+            <button type="submit">Подобрать велосипед мечты</button>
+        </form>
       </div>
 
       <section class="features" id="feautures">
@@ -200,7 +220,7 @@
         <h2>Как нас найти?</h2>
         <p class="contacts__adress">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/maps/-/CCQ354TVhA" width="957px" height="530px" frameborder="0"></iframe>
+          <!-- <iframe src="https://yandex.ru/maps/-/CCQ354TVhA" width="957px" height="530px" frameborder="0"></iframe> -->
         </div>
         <div class="contacts__inner">
           <a class="contacts__item contacts__item--mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
