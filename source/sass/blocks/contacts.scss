@@ -69,26 +69,38 @@
   color: rgba($dark-5, 0.5);
 }
 
-.contacts__item--mail::before {
-  content: "";
+// .contacts__item--mail::before {
+//   content: "";
+//   position: absolute;
+//   top: 6px;
+//   left: 0;
+//   background-repeat: no-repeat;
+//   height: 21px;
+//   width: 26px;
+//   background-image: url("../img/icon-mail.svg");
+// }
+
+.contacts__img--mail {
   position: absolute;
   top: 6px;
   left: 0;
-  background-repeat: no-repeat;
-  height: 21px;
-  width: 26px;
-  background-image: url("../img/icon-mail.svg");
 }
 
-.contacts__item--tel::before {
-  content: "";
+// .contacts__item--tel::before {
+//   content: "";
+//   position: absolute;
+//   top: 4px;
+//   left: 3px;
+//   background-repeat: no-repeat;
+//   height: 24px;
+//   width: 22px;
+//   background-image: url("../img/icon-phone.svg");
+// }
+
+.contacts__img--tel {
   position: absolute;
   top: 4px;
   left: 3px;
-  background-repeat: no-repeat;
-  height: 24px;
-  width: 22px;
-  background-image: url("../img/icon-phone.svg");
 }
 
 .contacts__item:hover,
