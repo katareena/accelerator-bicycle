@@ -15,13 +15,13 @@
     padding-top: 50px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
   }
 
   @media (max-width: $mobile-width) {
     min-width: 320px;
     max-width: 767px;
-    padding-bottom: 35px;
+    padding-bottom: 31px;
   }
 }
 
@@ -100,7 +100,7 @@
   left: -60px;
   width: 180px;
   height: 180px;
-  background-image: url("../img/icon-ellipse.svg");
+  background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
   z-index: 1;
 
@@ -109,7 +109,7 @@
     left: -37px;
     width: 127px;
     height: 127px;
-    background-image: url("../img/icon-ellipse-mobile.svg");
+    background-image: url("../img/ellipse-mobile.svg");
   }
 
   @media (max-width: $mobile-width) {
@@ -124,7 +124,7 @@
   left: -19px;
   width: 47px;
   height: 47px;
-  background-image: url("../img/icon-rectangle.svg");
+  background-image: url("../img/rectangle.svg");
   background-repeat: no-repeat;
   z-index: 3;
 
@@ -140,7 +140,7 @@
   right: -23px;
   width: 47px;
   height: 47px;
-  background-image: url("../img/icon-rectangle.svg");
+  background-image: url("../img/rectangle.svg");
   background-repeat: no-repeat;
   z-index: 3;
 
@@ -156,7 +156,7 @@
   right: -36px;
   width: 95px;
   height: 95px;
-  background-image: url("../img/icon-ellipse2.svg");
+  background-image: url("../img/ellipse2.svg");
   background-repeat: no-repeat;
   z-index: 3;
 
@@ -165,7 +165,7 @@
     right: -25px;
     width: 68px;
     height: 68px;
-    background-image: url("../img/icon-ellipse2-mobile.svg");
+    background-image: url("../img/ellipse2-mobile.svg");
   }
 
   @media (max-width: $mobile-width) {
@@ -180,10 +180,17 @@
   z-index: 2;
 }
 
-.bicycle img {
+.bicycle__img {
   width: 342px;
-  margin-bottom: 10px;
+  margin-bottom: 21px;
 
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.bicycle__img img {
   @media (max-width: $tablet-width) {
     width: 270px;
     height: 300px;
@@ -192,14 +199,29 @@
 
 .bicycle__img--road {
   height: 503px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .bicycle__img--mountain {
   height: 566px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .bicycle__img--child {
   height: 513px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .bicycle__item p {

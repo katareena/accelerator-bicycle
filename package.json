@@ -1,7 +1,7 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "accelerator_bicycle",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "accelerator_bicycle",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -51,5 +51,8 @@
   },
   "dependencies": {
     "del": "^4.1.1"
-  }
+  },
+  "eslintIgnore": [
+    "source/js/**/*.js"
+  ]
 }
