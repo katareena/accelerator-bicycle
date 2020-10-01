@@ -1,7 +1,7 @@
 .features {
   width: 100%;
   min-width: 1024px;
-  max-width: 1166px;
+  max-width: 1146px;
   padding-top: 150px;
   margin: 0 auto;
   min-height: 503px;
@@ -28,7 +28,8 @@
   line-height: 30px;
   letter-spacing: -0.1px;
   color: $dark-1;
-  margin-left: 35.2%;
+
+  margin-left: 35%;
   margin-bottom: 50px;
 
   @media (max-width: $tablet-width) {
@@ -57,15 +58,15 @@
 }
 
 .features__item {
-  width: 263px;
+  width: 245px;
   min-height: 134px;
   padding-top: 53px;
   text-align: center;
   position: relative;
 
   @media (max-width: $tablet-width) {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 30px;
   }
 

@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-ellipse" viewBox="0 0 180 180">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-ellipse-mobile" viewBox="0 0 127 127">
+<circle cx="63.5" cy="63.5" r="54.5" stroke="#0AD9C6" stroke-width="18"/>
+</symbol><symbol id="icon-ellipse" viewBox="0 0 180 180">
 <circle cx="90" cy="90" r="76.5" stroke="#0AD9C6" stroke-width="27"/>
+</symbol><symbol id="icon-ellipse2-mobile" viewBox="0 0 68 68">
+<circle cx="34" cy="34" r="27.5" stroke="#0AD9C6" stroke-width="13"/>
 </symbol><symbol id="icon-ellipse2" viewBox="0 0 95 95">
 <circle cx="47.5" cy="47.5" r="39" stroke="#0AD9C6" stroke-width="17"/>
 </symbol><symbol id="icon-mail" viewBox="0 0 26 20">

@@ -5,8 +5,24 @@
   margin: 0 auto;
   min-height: 1038px;
   padding-top: 150px;
-  padding-left: 32px;
-  padding-right: 8px;
+  padding-left: 30px;
+  padding-right: 10px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 768px;
+    max-width: 1023px;
+    min-height: auto;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    max-width: 767px;
+    padding-bottom: 35px;
+  }
 }
 
 .bicycle h2 {
@@ -19,23 +35,62 @@
 
   margin-left: 35.7%;
   margin-bottom: 89px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: calc(41 / 24);
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
 }
 
 .bicycle__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
 
-.bicycle__box--midle {
-  margin-top: -30px;
-}
-
-.bicycle__box--high {
-  margin-top: -40px;
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .bicycle__box {
   position: relative;
+  width: 31%;
+  min-width: 315px;
+  max-width: 342px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    min-width: auto;
+    margin: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.bicycle__box--midle {
+  margin-top: -30px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 25px;
+  }
+}
+
+.bicycle__box--high {
+  margin-top: -40px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+  }
 }
 
 .bicycle__box--circle-l::before {
@@ -48,6 +103,18 @@
   background-image: url("../img/icon-ellipse.svg");
   background-repeat: no-repeat;
   z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    top: 200px;
+    left: -37px;
+    width: 127px;
+    height: 127px;
+    background-image: url("../img/icon-ellipse-mobile.svg");
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -25px;
+  }
 }
 
 .bicycle__box--square::before {
@@ -60,6 +127,10 @@
   background-image: url("../img/icon-rectangle.svg");
   background-repeat: no-repeat;
   z-index: 3;
+
+  @media (max-width: $tablet-width) {
+    content: none;
+  }
 }
 
 .bicycle__box--square::after {
@@ -72,6 +143,10 @@
   background-image: url("../img/icon-rectangle.svg");
   background-repeat: no-repeat;
   z-index: 3;
+
+  @media (max-width: $tablet-width) {
+    content: none;
+  }
 }
 
 .bicycle__box--circle-s::before {
@@ -84,6 +159,19 @@
   background-image: url("../img/icon-ellipse2.svg");
   background-repeat: no-repeat;
   z-index: 3;
+
+  @media (max-width: $tablet-width) {
+    top: -20px;
+    right: -25px;
+    width: 68px;
+    height: 68px;
+    background-image: url("../img/icon-ellipse2-mobile.svg");
+  }
+
+  @media (max-width: $mobile-width) {
+    top: -20px;
+    right: -15px;
+  }
 }
 
 .bicycle__item {
@@ -92,9 +180,14 @@
   z-index: 2;
 }
 
-.bicycle__img {
+.bicycle img {
   width: 342px;
   margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .bicycle__img--road {

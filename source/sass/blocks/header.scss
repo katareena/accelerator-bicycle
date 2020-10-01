@@ -101,7 +101,7 @@
 
   @media (max-width: $tablet-width) {
     bottom: 5px;
-    left: 21px;
+    left: 22px;
   }
 
   @media (max-width: $mobile-width) {
@@ -118,16 +118,12 @@
     height: 50px;
     border: none;
     background-color: $basic;
-    background-image: url("../img/icon-menu.svg");
+    background-image: url("../img/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     margin-left: auto;
     margin-right: 0;
-
-    // position: absolute;
-    // left: 90%;
-    // top: 0;
   }
 }
 

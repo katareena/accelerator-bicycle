@@ -37,4 +37,14 @@
   width: 100%;
   height: 804px;
   background-image: linear-gradient($dark-2 87.9%, $light-1 0%);
+
+  @media (max-width: $tablet-width) {
+    height: 498px;
+    background-image: linear-gradient($dark-2 83%, $light-1 0%);
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 433px;
+    background-image: linear-gradient($dark-2 88.5%, $light-1 0%);
+  }
 }
