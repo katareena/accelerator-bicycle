@@ -108,12 +108,17 @@
   background-color: transparent;
   border: transparent;
   position: absolute;
-  top: 221px;
-  right: 422px;
-  width: 85px;
-  height: 85px;
+  top: 225px;
+  right: 426px;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
-  // background-color: pink;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    top: 224px;
+    right: 427px;
+    padding-top: 5px;
+  }
 
   @media (max-width: $tablet-width) {
     top: 96px;
@@ -131,10 +136,6 @@
   height: 65px;
   fill: $basic;
 
-  // @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-  // }
-
   @media (max-width: $tablet-width) {
     width: 91px;
     height: 91px;
@@ -143,6 +144,21 @@
   @media (max-width: $mobile-width) {
     width: 65px;
     height: 65px;
+  }
+}
+
+.video__button:hover,
+.video__button:focus {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    background-color: $basic-hover;
+    border-radius: 50%;
+  }
+}
+
+.video__button:active {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    background-color: rgba($basic-hover, 0.4);
+    border-radius: 50%;
   }
 }
 

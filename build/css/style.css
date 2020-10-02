@@ -1022,11 +1022,16 @@ a {
   background-color: transparent;
   border: transparent;
   position: absolute;
-  top: 221px;
-  right: 422px;
-  width: 85px;
-  height: 85px;
+  top: 225px;
+  right: 426px;
+  width: 75px;
+  height: 75px;
   cursor: pointer; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .video__button {
+      top: 224px;
+      right: 427px;
+      padding-top: 5px; } }
   @media (max-width: 1023px) {
     .video__button {
       top: 96px;
@@ -1048,6 +1053,17 @@ a {
     .video__play {
       width: 65px;
       height: 65px; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .video__button:hover,
+  .video__button:focus {
+    background-color: #0ab0d9;
+    border-radius: 50%; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .video__button:active {
+    background-color: rgba(10, 176, 217, 0.4);
+    border-radius: 50%; } }
 
 .video__play:hover,
 .video__play:focus {
