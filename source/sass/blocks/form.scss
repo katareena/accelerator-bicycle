@@ -25,11 +25,19 @@
   text-align: center;
   margin-bottom: 20px;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.65;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 18px;
     line-height: calc(28 / 18);
     color: $dark-5;
     margin-bottom: 30px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      line-height: 1.56;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -50,6 +58,10 @@
   padding: 12px 29px;
   margin-bottom: 20px;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.6;
+  }
+
   @media (max-width: $tablet-width) {
     width: 321px;
     padding: 12px 21px;
@@ -66,18 +78,24 @@
   font-size: 15px;
   line-height: calc(24 / 15);
   color: rgba($dark-3, 0.5);
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.6;
+  }
 }
 
 .form input:hover,
 .form input:focus {
+  background-color: $form-hover;
   box-shadow: 0 0 0 3px $basic;
+  cursor: pointer;
 }
 
 .form input:invalid {
-  box-shadow: 0 0 0 2px $invalid-form;
+  box-shadow: 0 0 0 2px $form-invalid;
 
   @media (max-width: $tablet-width) {
-    box-shadow: 0 0 0 1px $invalid-form;
+    box-shadow: 0 0 0 1px $form-invalid;
   }
 }
 
@@ -94,6 +112,10 @@
   border: none;
   border-radius: 4px;
   background-color: $basic;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.4;
+  }
 
   @media (max-width: $tablet-width) {
     width: 321px;

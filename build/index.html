@@ -8,7 +8,7 @@
     <meta name="description" content="Магазин велосипедов">
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font">
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font">
-    <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font">
+    <!-- <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font"> -->
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
@@ -37,7 +37,7 @@
       } */
     </style>
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-    <script src="../node_modules/pixel-glass/script.js"></script>
+    <script src="../node_modules/pixel-glass/script.js" defer=""></script>
 
   </head>
   <body>
@@ -192,7 +192,8 @@
             </picture>
             <button class="video__button" type="button" aria-label="Воспроизвести видео о подборе велосипеда">
               <svg class="video__play" width="65" height="65" viewBox="0 0 65 65" aria-hidden="true">
-                <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"></path>
               </svg>
             </button>
           </div>

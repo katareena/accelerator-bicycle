@@ -38,6 +38,10 @@
     width: 290px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      line-height: 1.71;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -90,6 +94,10 @@
   line-height: calc(38 / 28);
   color: $basic;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.36;
+  }
+
   @media (max-width: $mobile-width) {
     top: 22px;
     letter-spacing: -1.5px;
@@ -102,8 +110,16 @@
   line-height: calc(34 / 22);
   letter-spacing: -0.5px;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.55;
+  }
+
   @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: calc(34 / 18);
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      line-height: 2.11;
+    }
   }
 }

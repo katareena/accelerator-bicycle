@@ -278,11 +278,19 @@
   padding-top: 65px;
   margin-bottom: 23px;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.39;
+  }
+
   @media (max-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: calc(42 / 30);
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      line-height: 1.4;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -297,11 +305,19 @@
   letter-spacing: -0.1px;
   color: $light-1;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    line-height: 1.6;
+  }
+
   @media (max-width: $tablet-width) {
     width: 435px;
     text-align: center;
     font-size: 18px;
     line-height: calc(32 / 18);
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      line-height: 1.78;
+    }
   }
 
   @media (max-width: $mobile-width) {
