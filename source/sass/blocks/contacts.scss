@@ -86,7 +86,7 @@
 
   @media (max-width: $mobile-width) {
     width: 270px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -101,7 +101,7 @@
 
   @media (max-width: $mobile-width) {
     height: 250px;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 }
 
@@ -167,7 +167,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-right: 10px;
+    padding-right: 12px;
   }
 
   @media (max-width: $mobile-width) {
@@ -209,8 +209,10 @@
 .contacts__item:hover,
 .contacts__item:focus {
   color: $dark-5;
+  transition: all 0.2s ease;
 }
 
 .contacts__item:active {
   color: $basic;
+  transition: all 0.2s ease;
 }

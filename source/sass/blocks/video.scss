@@ -13,7 +13,7 @@
   @media (max-width: $tablet-width) {
     min-width: 768px;
     max-width: 1023px;
-    padding-top: 76px;
+    padding-top: 70px;
     padding-left: 133px;
     padding-right: 132px;
   }
@@ -23,7 +23,7 @@
     max-width: 767px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 89px;
+    padding-top: 84px;
   }
 }
 
@@ -45,7 +45,6 @@
     font-size: 24px;
     line-height: calc(30 / 24);
     margin-left: 0;
-    margin-bottom: 25px;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       line-height: 1.25;
@@ -53,7 +52,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-left: -12px;
   }
 }
@@ -117,17 +116,19 @@
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     top: 224px;
     right: 427px;
-    padding-top: 5px;
+    // padding-top: 5px;
   }
 
   @media (max-width: $tablet-width) {
+    width: 91px;
+    height: 91px;
     top: 96px;
-    right: 212px;
+    right: 205px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 39px;
-    right: 101px;
+    top: 42px;
+    right: 106px;
   }
 }
 
@@ -139,6 +140,11 @@
   @media (max-width: $tablet-width) {
     width: 91px;
     height: 91px;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width: 91px;
+      height: 91px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -151,22 +157,25 @@
 .video__button:focus {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     background-color: $basic-hover;
-    border-radius: 50%;
+    border-radius: 20%;
   }
 }
 
 .video__button:active {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     background-color: rgba($basic-hover, 0.4);
-    border-radius: 50%;
+    border-radius: 20%;
+    transition: all 0.2s ease;
   }
 }
 
 .video__play:hover,
 .video__play:focus {
   fill: $basic-hover;
+  transition: all 0.2s ease;
 }
 
 .video__play:active {
   fill: rgba($basic-hover, 0.4);
+  transition: all 0.2s ease;
 }

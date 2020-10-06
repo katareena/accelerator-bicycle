@@ -2,11 +2,10 @@
   width: 100%;
   min-height: 825px;
   background-image: url("../img/background-bike-desctop@1x.png");
-  background-size: cover;
   background-color: rgb(29, 29, 29);
-  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: center top;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background-bike-desctop@2x.png");
@@ -17,7 +16,6 @@
     max-width: 1023px;
     min-height: 340px;
     background-image: url("../img/background-bike-tablet@1x.png");
-    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/background-bike-tablet@2x.png");
@@ -31,7 +29,7 @@
     background-image: url("../img/background-bike-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/background-bike-mobile@2x.png");
+      background-image: url("../img/background-bike-mobile@2x.jpg");
     }
   }
 }
@@ -89,6 +87,7 @@
     cursor: pointer;
     margin-left: auto;
     margin-right: 0;
+    z-index: 30;
   }
 }
 
@@ -116,11 +115,13 @@
 .header__burger:focus {
   @media (max-width: $tablet-width) {
     background-color: $basic-hover;
+    transition: all 0.2s ease;
   }
 }
 
 .header__burger:active {
   background-color: rgba($basic-hover, 0.4);
+  transition: all 0.2s ease;
 }
 
 .header__nav {
@@ -222,10 +223,12 @@
 .header__item a:hover,
 .header__item a:focus {
   color: $basic;
+  transition: all 0.2s ease;
 }
 
 .header__item a:active {
   color: rgba($basic, 0.5);
+  transition: all 0.2s ease;
 }
 
 .header__inner {

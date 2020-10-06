@@ -7,7 +7,6 @@
   @media (max-width: $tablet-width) {
     width: 321px;
     position: static;
-    // min-height: 343px;
   }
 
   @media (max-width: $mobile-width) {
@@ -89,6 +88,7 @@
   background-color: $form-hover;
   box-shadow: 0 0 0 3px $basic;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .form input:invalid {
@@ -130,8 +130,10 @@
 .form button:focus {
   background-color: $basic-hover;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .form button:active {
   background-color: rgba($basic-hover, 0.4);
+  transition: all 0.2s ease;
 }
