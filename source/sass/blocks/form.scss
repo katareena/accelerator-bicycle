@@ -1,7 +1,7 @@
 .form {
   width: 327px;
   position: absolute;
-  left: 59.6%; //695px;
+  left: 59.6%;
   top: -503px;
 
   @media (max-width: $tablet-width) {
@@ -47,7 +47,7 @@
 .form input {
   width: 327px;
   height: 48px;
-  border: transparent;
+  border: solid 1px $light-3;
   border-radius: 4px;
   background-color: $light-1;
   font-family: "Open Sans", "Tahoma", sans-serif;
@@ -87,15 +87,18 @@
 .form input:focus {
   background-color: $form-hover;
   box-shadow: 0 0 0 3px $basic;
+  border: transparent;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.form input:invalid {
+.form input:invalid:not(:placeholder-shown) {
   box-shadow: 0 0 0 2px $form-invalid;
+  border: transparent;
 
   @media (max-width: $tablet-width) {
     box-shadow: 0 0 0 1px $form-invalid;
+    border: transparent;
   }
 }
 

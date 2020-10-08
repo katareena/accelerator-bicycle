@@ -18,188 +18,190 @@
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
+    <div class="site-wrap">
 
-    <header class="header">
-      <div class="header__logo-wrap">
-        <a class="header__logo">
-          <img class="header__logo-img" src="img/logo.svg" width="70" height="22" alt="Логотип магазина велосипедов «Moon»">
-        </a>
-        <button class="header__burger header__burger--hidden" type="button" aria-label="кнопка открытия меню"></button>
-      </div>
+      <header class="header">
+        <div class="header__logo-wrap">
+          <a class="header__logo">
+            <img class="header__logo-img" src="img/logo.svg" width="70" height="22" alt="Логотип магазина велосипедов «Moon»">
+          </a>
+          <button class="header__burger header__burger--hidden" type="button" aria-label="Кнопка открытия меню"></button>
+        </div>
 
-      <nav class="header__nav header__nav--open">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#features">О нас</a>
-          </li>
-          <li class="header__item">
-            <a href="#bicycle">Виды велосипедов</a>
-          </li>
-          <li class="header__item">
-            <a href="#video">Видео про велосипеды</a>
-          </li>
-          <li class="header__item">
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header__nav header__nav--open">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#features">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#bicycle">Виды велосипедов</a>
+            </li>
+            <li class="header__item">
+              <a href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="header__inner">
-        <h1>Мы продаем велосипеды</h1>
-        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </div>
+        <div class="header__inner">
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
 
-    </header>
+      </header>
 
-    <main class="main">
-      <div class="main__wrap-form">
-        <form class="form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
-          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <div>
-            <label class="visually-hidden" for="name">Имя</label>
-            <input id="name" name="user-name" type="text" minlength="2" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
-          </div>
-
-          <div>
-            <label class="visually-hidden" for="phone">Телефон</label>
-            <input id="phone" name="user-phone" type="tel" minlength="18" maxlength="18" placeholder="Введите Ваш номер телефона" required="">
-          </div>
-            <button type="submit">Подобрать велосипед мечты</button>
-        </form>
-      </div>
-
-      <section class="features" id="features">
-        <h2 class="features__title">Несколько фактов о нас</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <p>Самый широкий выбор велосипедов!</p>
-          </li>
-          <li class="features__item">
-            <p>Доставка велосипедов по всей России!</p>
-          </li>
-          <li class="features__item">
-            <p>Большой выбор крутых аксессуаров!</p>
-          </li>
-          <li class="features__item">
-            <p>Профессиональные консультации!</p>
-          </li>
-        </ul>
-      </section>
-
-      <div class="main__wrap-bicycle">
-        <section class="bicycle" id="bicycle">
-          <h2>Виды велосипедов</h2>
-          <div class="bicycle__inner">
-
-            <div class="bicycle__box bicycle__box--midle bicycle__box--circle-l">
-              <a class="bicycle__item" href="#">
-                <div class="bicycle__img bicycle__img--road">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/andreas-haimerl-mobile@1x.webp 1x, img/andreas-haimerl-mobile@2x.webp 2x">
-                    <source type="image/webp" srcset="img/andreas-haimerl-desctop@1x.webp 1x, img/andreas-haimerl-desctop@2x.webp 2x">
-
-                    <!-- 1х: 270px; 2x: 540px -->
-                    <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-mobile@1x.jpg 1x, img/andreas-haimerl-mobile@2x.jpg 2x">
-                    <!-- 1х: 342px; 2x: 684px -->
-                    <img src="img/andreas-haimerl-desctop@1x.jpg" srcset="img/andreas-haimerl-desctop@2x.jpg 2x" loading="lazy" width="342" height="503" alt="Дорожный велосипед">
-                  </picture>
-                </div>
-                <p>Дорожный велосипед</p>
-              </a>
+      <main class="main">
+        <div class="main__wrap-form">
+          <form class="form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <div>
+              <label class="visually-hidden" for="name">Имя</label>
+              <input id="name" name="user-name" type="text" minlength="2" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
             </div>
 
-            <div class="bicycle__box bicycle__box--square">
-              <a class="bicycle__item" href="#">
-                <div class="bicycle__img bicycle__img--mountain">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-mobile@1x.webp 1x, img/eberhard-grossgasteiger-mobile@2x.webp 2x">
-                    <source type="image/webp" srcset="img/eberhard-grossgasteiger-desctop@1x.webp 1x, img/eberhard-grossgasteiger-desctop@2x.webp 2x">
-
-                    <!-- 1х: 270px; 2x: 540px -->
-                    <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-mobile@1x.jpg 1x, img/eberhard-grossgasteiger-mobile@2x.jpg 2x">
-                    <!-- 1х: 342px; 2x: 684px -->
-                    <img src="img/eberhard-grossgasteiger-desctop@1x.jpg" srcset="img/eberhard-grossgasteiger-desctop@2x.jpg 2x" loading="lazy" width="342" height="566" alt="Горный велосипед">
-                  </picture>
-                </div>
-                <p>Горный велосипед</p>
-              </a>
+            <div>
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input id="phone" name="user-phone" type="tel" minlength="18" pattern="[^a-z]{18}" placeholder="Введите Ваш номер телефона" required="">
             </div>
+              <button type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </div>
 
-            <div class="bicycle__box bicycle__box--high bicycle__box--circle-s">
-              <a class="bicycle__item" href="#">
-                <div class="bicycle__img bicycle__img--child">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/roger-goh-mobile@1x.webp 1x, img/roger-goh-mobile@2x.webp 2x">
-                    <source type="image/webp" srcset="img/roger-goh-desctop@1x.webp 1x, img/roger-goh-desctop@2x.webp 2x">
-
-                    <!-- 1х: 270px; 2x: 540px -->
-                    <source media="(max-width: 1023px)" srcset="img/roger-goh-mobile@1x.jpg 1x, img/roger-goh-mobile@2x.jpg 2x">
-                    <!-- 1х: 342px; 2x: 684px -->
-                    <img src="img/roger-goh-desctop@1x.jpg" srcset="img/roger-goh-desctop@2x.jpg 2x" loading="lazy" width="342" height="513" alt="Детский велосипед">
-                  </picture>
-                </div>
-                <p>Детский велосипед</p>
-              </a>
-            </div>
-
-          </div>
+        <section class="features" id="features">
+          <h2 class="features__title">Несколько фактов о нас</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <p>Самый широкий выбор велосипедов!</p>
+            </li>
+            <li class="features__item">
+              <p>Доставка велосипедов по всей России!</p>
+            </li>
+            <li class="features__item">
+              <p>Большой выбор крутых аксессуаров!</p>
+            </li>
+            <li class="features__item">
+              <p>Профессиональные консультации!</p>
+            </li>
+          </ul>
         </section>
-      </div>
 
-      <div class="main__wrap-video">
-        <section class="video" id="video">
-          <h2>Видео про велосипеды</h2>
-          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="main__wrap-bicycle">
+          <section class="bicycle" id="bicycle">
+            <h2>Виды велосипедов</h2>
+            <div class="bicycle__inner">
 
-          <div class="video-inner">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/video-bicycle-mobile@1x.webp 1x, img/video-bicycle-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-bicycle-tablet@1x.webp 1x, img/video-bicycle-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video-bicycle-desctop@1x.webp 1x, img/video-bicycle-desctop@2x.webp 2x">
+              <div class="bicycle__box bicycle__box--middle bicycle__box--circle-l">
+                <a class="bicycle__item" href="#">
+                  <div class="bicycle__img bicycle__img--road">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/andreas-haimerl-mobile@1x.webp 1x, img/andreas-haimerl-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/andreas-haimerl-desctop@1x.webp 1x, img/andreas-haimerl-desctop@2x.webp 2x">
 
-              <!-- 1х: 288px; 2x: 576px -->
-              <source media="(max-width: 767px)" srcset="img/video-bicycle-mobile@1x.jpg 1x, img/video-bicycle-mobile@2x.jpg 2x">
-              <!-- 1х: 503px; 2x: 1006px -->
-              <source media="(max-width: 1023px)" srcset="img/video-bicycle-tablet@1x.jpg 1x, img/video-bicycle-tablet@2x.jpg 2x">
-              <!-- 1х: 929px; 2x: 1858px -->
-              <img src="img/video-bicycle-desctop@1x.jpg" srcset="img/video-bicycle-desctop@2x.jpg 2x" loading="lazy" width="929" height="522" alt="Видео про велосипеды">
-            </picture>
-            <button class="video__button" type="button" aria-label="Воспроизвести видео о подборе велосипеда">
-              <svg class="video__play" width="65" height="65" viewBox="0 0 65 65" aria-hidden="true">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"></path>
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-mobile@1x.jpg 1x, img/andreas-haimerl-mobile@2x.jpg 2x">
+                      <!-- 1х: 342px; 2x: 684px -->
+                      <img src="img/andreas-haimerl-desctop@1x.jpg" srcset="img/andreas-haimerl-desctop@2x.jpg 2x" loading="lazy" width="342" height="503" alt="Дорожный велосипед">
+                    </picture>
+                  </div>
+                  <p>Дорожный велосипед</p>
+                </a>
+              </div>
+
+              <div class="bicycle__box bicycle__box--square">
+                <a class="bicycle__item" href="#">
+                  <div class="bicycle__img bicycle__img--mountain">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-mobile@1x.webp 1x, img/eberhard-grossgasteiger-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/eberhard-grossgasteiger-desctop@1x.webp 1x, img/eberhard-grossgasteiger-desctop@2x.webp 2x">
+
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-mobile@1x.jpg 1x, img/eberhard-grossgasteiger-mobile@2x.jpg 2x">
+                      <!-- 1х: 342px; 2x: 684px -->
+                      <img src="img/eberhard-grossgasteiger-desctop@1x.jpg" srcset="img/eberhard-grossgasteiger-desctop@2x.jpg 2x" loading="lazy" width="342" height="566" alt="Горный велосипед">
+                    </picture>
+                  </div>
+                  <p>Горный велосипед</p>
+                </a>
+              </div>
+
+              <div class="bicycle__box bicycle__box--high bicycle__box--circle-s">
+                <a class="bicycle__item" href="#">
+                  <div class="bicycle__img bicycle__img--child">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/roger-goh-mobile@1x.webp 1x, img/roger-goh-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/roger-goh-desctop@1x.webp 1x, img/roger-goh-desctop@2x.webp 2x">
+
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source media="(max-width: 1023px)" srcset="img/roger-goh-mobile@1x.jpg 1x, img/roger-goh-mobile@2x.jpg 2x">
+                      <!-- 1х: 342px; 2x: 684px -->
+                      <img src="img/roger-goh-desctop@1x.jpg" srcset="img/roger-goh-desctop@2x.jpg 2x" loading="lazy" width="342" height="513" alt="Детский велосипед">
+                    </picture>
+                  </div>
+                  <p>Детский велосипед</p>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="main__wrap-video">
+          <section class="video" id="video">
+            <h2>Видео про велосипеды</h2>
+            <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+            <div class="video-inner">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/video-bicycle-mobile@1x.webp 1x, img/video-bicycle-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-bicycle-tablet@1x.webp 1x, img/video-bicycle-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-bicycle-desctop@1x.webp 1x, img/video-bicycle-desctop@2x.webp 2x">
+
+                <!-- 1х: 288px; 2x: 576px -->
+                <source media="(max-width: 767px)" srcset="img/video-bicycle-mobile@1x.jpg 1x, img/video-bicycle-mobile@2x.jpg 2x">
+                <!-- 1х: 503px; 2x: 1006px -->
+                <source media="(max-width: 1023px)" srcset="img/video-bicycle-tablet@1x.jpg 1x, img/video-bicycle-tablet@2x.jpg 2x">
+                <!-- 1х: 929px; 2x: 1858px -->
+                <img src="img/video-bicycle-desctop@1x.jpg" srcset="img/video-bicycle-desctop@2x.jpg 2x" loading="lazy" width="929" height="522" alt="Видео про велосипеды">
+              </picture>
+              <button class="video__button" type="button" aria-label="Воспроизвести видео о подборе велосипеда">
+                <svg class="video__play" width="65" height="65" viewBox="0 0 65 65" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"></path>
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <section class="contacts" id="contacts">
+          <h2>Как нас найти?</h2>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601547594047!5m2!1sru!2sru" width="957" height="530" style="border:0;" allow="fullscreen" aria-hidden="false" tabindex="0" title="Расположение магазина на карте"></iframe>
+          </div>
+
+          <div class="contacts__inner">
+            <div class="contacts__item contacts__item--mail">
+              <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+              <svg class="contacts__img contacts__img--mail" width="26" height="20" viewBox="0 0 26 20" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
               </svg>
-            </button>
+            </div>
+            <div class="contacts__item contacts__item--tel">
+              <a href="tel:849978468446">+7 (499) -784-684-46</a>
+              <svg class="contacts__img contacts__img--tel" width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
+                <use xlink:href="img/sprite_auto.svg#icon-tel"></use>
+              </svg>
+            </div>
           </div>
         </section>
-      </div>
-
-    </main>
-
-    <footer class="footer">
-      <section class="contacts" id="contacts">
-        <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601547594047!5m2!1sru!2sru" width="957" height="530" style="border:0;" allow="fullscreen" aria-hidden="false" tabindex="0" title="Расположение магазина на карте"></iframe>
-        </div>
-
-        <div class="contacts__inner">
-          <a class="contacts__item contacts__item--mail" href="mailto:puteshestviemechta@gmail.ru">
-            <p>puteshestviemechta@gmail.ru</p>
-            <svg class="contacts__img contacts__img--mail" width="26" height="20" viewBox="0 0 26 20" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
-            </svg>
-          </a>
-          <a class="contacts__item contacts__item--tel" href="tel:849978468446">
-            <p>+7 (499) -784-684-46</p>
-            <svg class="contacts__img contacts__img--tel" width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
-              <use xlink:href="img/sprite_auto.svg#icon-tel"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
-    </footer>
+      </footer>
+    </div>
 
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>

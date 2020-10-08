@@ -78,7 +78,7 @@
   }
 }
 
-.bicycle__box--midle {
+.bicycle__box--middle {
   margin-top: -30px;
 
   @media (max-width: $tablet-width) {
@@ -161,7 +161,7 @@
   content: "";
   position: absolute;
   top: -31px;
-  right: -38px;
+  right: -38px; //-11%;
   width: 97px;
   height: 95px;
   border: 18px solid $basic;
@@ -190,7 +190,7 @@
 }
 
 .bicycle__img {
-  width: 342px;
+  max-width: 342px;
   margin-bottom: 21px;
 
   @media (max-width: $tablet-width) {

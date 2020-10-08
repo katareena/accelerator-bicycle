@@ -122,9 +122,9 @@
 }
 
 .contacts__inner {
-  width: 956px;
-  padding: 0 196px;
+  width: 564px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 100px;
 
@@ -146,21 +146,27 @@
 }
 
 .contacts__item {
+  flex: 0 0 50%;
   position: relative;
-  color: rgba($dark-5, 0.5);
 
   @media (max-width: $mobile-width) {
     margin-bottom: 14px;
   }
 }
 
-.contacts__item p {
+.contacts__item a {
   font-size: 16px;
   line-height: calc(32 / 16);
+  color: rgba($dark-5, 0.5);
   width: 279px;
-  padding-right: 11px;
+  padding-right: 17px;
   text-align: right;
   margin: 0;
+  cursor: pointer;
+
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     line-height: 2;
@@ -176,14 +182,17 @@
   }
 }
 
+.contacts__item--mail a {
+  width: 240px;
 
-.contacts__item--mail p {
   @media (max-width: $mobile-width) {
     padding-left: 30px;
   }
 }
 
-.contacts__item--tel p {
+.contacts__item--tel a {
+  width: 175px;
+
   @media (max-width: $mobile-width) {
     padding-left: 5px;
   }
@@ -197,8 +206,8 @@
 
 .contacts__img--tel {
   position: absolute;
-  top: 4px;
-  left: 79px;
+  top: 2px;
+  left: 77px;
 
   @media (max-width: $mobile-width) {
     top: 2px;
@@ -206,13 +215,13 @@
   }
 }
 
-.contacts__item:hover,
-.contacts__item:focus {
+.contacts__item > a:hover,
+.contacts__item > a:focus {
   color: $dark-5;
   transition: all 0.2s ease;
 }
 
-.contacts__item:active {
+.contacts__item a:active {
   color: $basic;
   transition: all 0.2s ease;
 }
