@@ -818,8 +818,7 @@ a {
   height: 180px;
   border: 28px solid #0ad9c6;
   background-color: transparent;
-  border-radius: 100%;
-  z-index: 1; }
+  border-radius: 100%; }
   @media (max-width: 1023px) {
     .bicycle__box--circle-l::before {
       top: 200px;

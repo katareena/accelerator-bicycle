@@ -38,15 +38,15 @@
     }
   };
 
-  window.main = {
+  window.headerMenu = {
     switchMenuHandler: switchMenuHandler,
     hideMenuHandler: hideMenuHandler,
     closeOutMenuHandler: closeOutMenuHandler,
     closeEscMenuHandler: closeEscMenuHandler,
   };
 
-  window.addEventListener('load', window.main.hideMenuHandler);
-  document.addEventListener('click', window.main.closeOutMenuHandler);
-  document.addEventListener('keydown', window.main.closeEscMenuHandler);
-  burger.addEventListener('click', window.main.switchMenuHandler);
+  window.addEventListener('load', window.headerMenu.hideMenuHandler);
+  document.addEventListener('click', window.headerMenu.closeOutMenuHandler);
+  document.addEventListener('keydown', window.headerMenu.closeEscMenuHandler);
+  burger.addEventListener('click', window.headerMenu.switchMenuHandler);
 })();
