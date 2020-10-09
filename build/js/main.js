@@ -85,8 +85,3 @@
 
   phoneInput.addEventListener('keydown', window.maskPhone.maskPhoneHandler);
 })();
-
-'use strict';
-(function () {
-  svg4everybody();
-})();
