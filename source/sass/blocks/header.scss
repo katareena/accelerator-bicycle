@@ -96,19 +96,23 @@
 }
 
 .header__burger--close {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: $light-1;
-  background-image: url("../img/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 0;
-  position: relative;
-  z-index: 3;
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: $light-1;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .header__burger:hover,
@@ -134,15 +138,6 @@
 
   @media (max-width: $tablet-width) {
     display: none;
-    min-height: 568px;
-    background-color: $light-1;
-    min-width: 768px;
-    max-width: 1023px;
-    padding: 0;
-    padding-top: 98px;
-    margin-top: -50px;
-    position: relative;
-    z-index: 2;
   }
 
   @media (max-width: $mobile-width) {
@@ -154,6 +149,23 @@
 .header__nav--open {
   @media (max-width: $tablet-width) {
     display: block;
+    width: 100%;
+    height: 568px;
+    background-color: $light-1;
+    min-width: 768px;
+    max-width: 1023px;
+    padding: 0;
+    padding-top: 98px;
+    padding-bottom: 108px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    max-width: 767px;
   }
 }
 
@@ -181,11 +193,14 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    min-width: 768px;
+    max-width: 1023px;
     height: 60px;
     padding-top: 0;
     padding-left: 16px;
     padding-right: 35px;
     background-color: $light-4;
+    margin: 0;
     margin-bottom: 30px;
     position: relative;
     cursor: pointer;
@@ -201,6 +216,11 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 320px;
+    max-width: 767px;
   }
 }
 

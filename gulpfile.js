@@ -16,6 +16,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 var concat = require('gulp-concat');
+var removeCode = require('gulp-remove-code');
 
 gulp.task('clean', function () {
   return del('build');
@@ -94,6 +95,7 @@ gulp.task('jsvendor', function () {
     './node_modules/picturefill/dist/picturefill.js',
     'source/js/vendors/*.js',
   ])
+      .pipe(removeCode({noDevFeatures: true, commentStart: '/*', commentEnd: '*/'}))
       .pipe(concat('vendor.js'))
       .pipe(gulp.dest('build/js'));
 });

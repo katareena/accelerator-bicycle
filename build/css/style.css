@@ -171,19 +171,22 @@ a {
   display: none; }
 
 .header__burger--close {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: #ffffff;
-  background-image: url("../img/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 0;
-  position: relative;
-  z-index: 3; }
+  display: none; }
+  @media (max-width: 1023px) {
+    .header__burger--close {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: #ffffff;
+      background-image: url("../img/close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      margin-left: auto;
+      margin-right: 0;
+      position: relative;
+      z-index: 3; } }
 
 @media (max-width: 1023px) {
   .header__burger:hover,
@@ -205,16 +208,7 @@ a {
   margin: 0 auto; }
   @media (max-width: 1023px) {
     .header__nav {
-      display: none;
-      min-height: 568px;
-      background-color: #ffffff;
-      min-width: 768px;
-      max-width: 1023px;
-      padding: 0;
-      padding-top: 98px;
-      margin-top: -50px;
-      position: relative;
-      z-index: 2; } }
+      display: none; } }
   @media (max-width: 767px) {
     .header__nav {
       min-width: 320px;
@@ -222,7 +216,24 @@ a {
 
 @media (max-width: 1023px) {
   .header__nav--open {
-    display: block; } }
+    display: block;
+    width: 100%;
+    height: 568px;
+    background-color: #ffffff;
+    min-width: 768px;
+    max-width: 1023px;
+    padding: 0;
+    padding-top: 98px;
+    padding-bottom: 108px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; } }
+
+@media (max-width: 767px) {
+  .header__nav--open {
+    min-width: 320px;
+    max-width: 767px; } }
 
 .header__list {
   margin: 0;
@@ -259,11 +270,14 @@ a {
   @media (max-width: 1023px) {
     .header__item {
       width: 100%;
+      min-width: 768px;
+      max-width: 1023px;
       height: 60px;
       padding-top: 0;
       padding-left: 16px;
       padding-right: 35px;
       background-color: #f6f7f9;
+      margin: 0;
       margin-bottom: 30px;
       position: relative;
       cursor: pointer; }
@@ -277,6 +291,10 @@ a {
         background-image: url("../img/arrow.svg");
         background-repeat: no-repeat;
         background-position: center; } }
+  @media (max-width: 767px) {
+    .header__item {
+      min-width: 320px;
+      max-width: 767px; } }
 
 .header__item a {
   -webkit-box-sizing: border-box;
