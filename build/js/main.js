@@ -3,13 +3,21 @@
   var ESCAPE = 27;
   var burger = document.querySelector('.header__burger');
   var nav = document.querySelector('.header__nav');
+  var navOpen = document.querySelector('.header__nav--open');
+
+  var preSetMenu = function () {
+    navOpen.style.position = 'absolute';
+    navOpen.style.margin = '0';
+  }
 
   var hideMenuHandler = function () {
+    preSetMenu();
     document.querySelector('.header__nav').classList.remove('header__nav--open');
     document.querySelector('.header__burger').classList.remove('header__burger--hidden');
   };
 
   var switchMenuHandler = function () {
+    preSetMenu();
     document.querySelector('.header__nav').classList.toggle('header__nav--open');
     document.querySelector('.header__burger').classList.toggle('header__burger--close');
   };
