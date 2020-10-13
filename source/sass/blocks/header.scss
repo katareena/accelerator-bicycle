@@ -170,6 +170,13 @@
   }
 }
 
+.header__nav--absolut {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    margin-top: 0;
+  }
+}
+
 .header__list {
   @include list-reset;
   min-height: 62px;

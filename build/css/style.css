@@ -236,6 +236,11 @@ a {
     min-width: 320px;
     max-width: 767px; } }
 
+@media (max-width: 1023px) {
+  .header__nav--absolut {
+    position: absolute;
+    margin-top: 0; } }
+
 .header__list {
   margin: 0;
   padding: 0;
