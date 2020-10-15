@@ -690,6 +690,12 @@ a {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media (max-width: 767px) {
+    .features__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .features__item {
   width: 245px;
@@ -706,6 +712,7 @@ a {
     .features__item {
       min-height: 125px;
       padding-top: 47px;
+      margin: 0 auto;
       margin-bottom: 38px; } }
 
 .features__item::before {

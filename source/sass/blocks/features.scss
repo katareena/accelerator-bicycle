@@ -61,6 +61,10 @@
   @media (max-width: $tablet-width) {
     justify-content: center;
   }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .features__item {
@@ -79,6 +83,7 @@
   @media (max-width: $mobile-width) {
     min-height: 125px;
     padding-top: 47px;
+    margin: 0 auto;
     margin-bottom: 38px;
   }
 }
